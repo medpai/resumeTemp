@@ -1,0 +1,224 @@
+\documentclass[letterpaper,11pt]{article}
+
+% ATS-friendly packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english,french]{babel} % Support for French
+\usepackage{tabularx}
+\usepackage[utf8]{inputenc} % Ensure proper character encoding
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=0.8cm]{geometry}
+
+% Ensure PDF is machine-readable
+\pdfgentounicode=1
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for readability
+\addtolength{\oddsidemargin}{-0.15in}
+\addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Standard section formatting for ATS readability
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Additional ATS optimization settings
+\pdfgentounicode=1
+\pdfobjcompresslevel=0 % Ensures text is not compressed in a way that hinders extraction
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% Standard bullet points for better ATS parsing
+\renewcommand\labelitemi{\textbullet}
+\renewcommand\labelitemii{\textbullet}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large Elmahdi Harchi} \\[2mm]
+    \footnotesize
+    Téléphone: +1 343-254-6991 ~ 
+    Courriel: mehdi.hr111@gmail.com ~ 
+    Lieu: Montréal, QC
+    Disponibilité: Immédiate — Contrat temporaire 6 mois (surcroît)
+    \vspace{-8pt}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Résumé Professionnel}
+\vspace{1pt}
+Technicien en informatique orienté centre de services, bilingue (FR/EN), expérimenté en gestion des incidents et des demandes via outil de billetterie, support aux postes de travail et communication client. Maîtrise de Windows 7/8/10/11, diagnostics réseau, assistance à distance, inventaire et documentation. Expérience avec Active Directory (réinitialisation de mots de passe, accès de base), déploiement et mise à jour de postes, et rédaction de guides. Ouvert à la mobilité vers Montréal.
+\vspace{-12pt}
+
+%-----------QUALIFICATIONS-----------
+\section{Qualifications}
+\vspace{1mm}
+\begin{itemize}
+  \item Centre de services: prise en charge, enregistrement et suivi des demandes (billetterie ITSM); escalade hiérarchique et fonctionnelle
+  \item Postes de travail: installation, configuration, déploiement Windows 7/8/10/11; correctifs et mises à jour
+  \item Accès et annuaires: Active Directory (réinitialisation de mots de passe, groupes/permissions de base), VPN, RDP
+  \item Microsoft 365/Office 365 et Exchange (notions); Suite Office (Outlook, Word, Excel, Teams)
+  \item Environnements serveurs Windows 2008/2012/2016 (notions)
+  \item Réseautique et télécommunications (notions); diagnostics réseau de base
+  \item Documentation des procédures, avis aux utilisateurs, gestion d'inventaire et licences (notions)
+  \item Service à la clientèle et communication en français et en anglais
+\end{itemize}
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{Formation}\vspace{1mm}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Collège La Cité}{2024 -- 2025}
+      {DEC en Programmation Informatique}{Ottawa, Canada}
+    \resumeSubheading
+      {Université Ibn Tofail}{2021 -- 2023}
+      {DEUG en Informatique}{Maroc}
+  \resumeSubHeadingListEnd
+    \vspace{-12pt}
+%-----------SKILLS-----------
+\section{Compétences}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+     \textbf{Langues}{: \underline{Parfaitement bilingue} (Français et Anglais)} \\[0.5mm]
+     \textbf{Centre de services / Support}{: Gestion des incidents et demandes (outil de billetterie), Escalade et suivi, Communication client} \\[0.5mm]
+     \textbf{Systèmes d'Exploitation}{: Windows (7/8/10/11), macOS, Linux (Ubuntu), iOS, Android} \\[0.5mm]
+     \textbf{Outils et Infrastructure}{: Active Directory, Microsoft 365/Office 365, Exchange (notions), Bureau à Distance (RDP), VPN, Outils de billetterie (ITSM), Déploiement d'OS (imagerie), Serveurs Windows (2008/2012/2016 - notions), Logiciels antivirus} \\[0.5mm]
+     \textbf{Méthodologies}{: ITIL (notions), bonnes pratiques ITSM} \\[0.5mm]
+     \textbf{Bureautique}{: Suite Microsoft (Outlook, Word, Excel, Teams)} \\[0.5mm]
+     \textbf{Programmation / Scripting}{: HTML, CSS, JavaScript, Python (bases), PowerShell (bases)} \\[0.5mm]
+     \textbf{Autres}{: Documentation technique et procédures, Gestion d'actifs et inventaire, Gestion des licences (notions), Télécommunications (notions), Sécurité informatique} \\ [0.5mm]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE---------------
+\section{Expérience}
+    \resumeSubHeadingListStart
+            \resumeSubheading{Assistant Informatique (Temps Partiel)}{2024 -- 2025}{Collège La Cité}{Ottawa, Canada} 
+                \resumeItemListStart
+                    \resumeItem{Réception, enregistrement et suivi des demandes (en personne, téléphone, courriel) dans l'outil de billetterie; communication proactive avec les utilisateurs}
+                    \resumeItem{Préparation, installation et configuration de postes de travail; mises à jour logicielles et correctifs; déploiement de systèmes d'exploitation Windows}
+                    \resumeItem{Support des accès: réseau du campus/VPN; réinitialisation de mots de passe et permissions de base via Active Directory}
+                    \resumeItem{Tenue à jour de l'inventaire des équipements et périphériques; suivi des prêts/remplacements et conformité logicielle de base}
+                    \resumeItem{Rédaction et mise à jour de notes de support et procédures dans la base de connaissances interne}
+                    \resumeItem{Soutien applicatif des postes de travail (suite Office, outils métiers internes) et aide à l'utilisation de base}
+                    \resumeItem{Participation à la vérification/validation des infrastructures bureautiques et serveurs (en collaboration avec l'équipe spécialisée)}
+                    \resumeItem{Escalade hiérarchique et fonctionnelle vers les équipes spécialisées pour les problématiques hors champ d'expertise}
+                    \resumeItem{Avis aux utilisateurs et suivi lors d'incidents/pannes majeures; mise à jour de l'état des tickets}
+                    \resumeItem{Collaboration inter-équipes et participation aux rencontres d'équipe; appui ponctuel aux nouveaux techniciens}
+                    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projets}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+            {\textbf{Système de Base de Connaissances pour Centre d'Assistance}}{HTML, CSS, JavaScript, MySQL}
+            \\[2mm]
+          \resumeItemListStart
+            \resumeItem{Développement d'une base de connaissances interne structurée (problème / cause / solution) pour documenter les incidents récurrents}
+            \resumeItem{Mise en place de catégories et mots-clés pour faciliter la recherche et harmoniser les réponses}
+          \resumeItemListEnd
+    \resumeProjectHeading
+            {\textbf{Atelier de Réparation PC}}{Diagnostics Matériels, Maintenance Système}
+            \\[2mm]
+          \resumeItemListStart
+            \resumeItem{Diagnostic de pannes matérielles courantes; remplacement de composants, tests et validation}
+            \resumeItem{Déploiement et configuration de Windows 10/11, installation de pilotes et vérifications post-déploiement}
+          \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-28pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{{Compétences Essentielles en Analyse de Données}}}{Microsoft et LinkedIn}
+            \\[1mm]
+          \resumeProjectHeading
+            {\textbf{{Compétences Essentielles en Développement de Logiciels}}}{Microsoft et LinkedIn}
+            \\[1mm]
+          \resumeProjectHeading
+            {\textbf{{Certificat Professionnel Microsoft Azure AI Essentials}}}{Microsoft}
+            \\[1mm]
+          \resumeProjectHeading
+            {\textbf{{Certificat Professionnel Docker Foundations}}}{Docker}
+            \\[1mm]
+          \resumeProjectHeading
+            {\textbf{{Compétences Essentielles en IA Générative, Qu'est-ce que l'IA Générative}}}{LinkedIn}
+            \\[1mm]
+          \resumeSubHeadingListEnd
+ \vspace{-15pt}
+
+\end{document}

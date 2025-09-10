@@ -1,9 +1,9 @@
 \documentclass[letterpaper,11pt]{article}
 
+% ATS-friendly packages
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
@@ -11,13 +11,17 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[utf8]{inputenc} % Ensure proper character encoding
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
-\usepackage[margin=1.4cm]{geometry}
+\usepackage[margin=0.8cm]{geometry}
 
+% Ensure PDF is machine-readable
+\pdfgentounicode=1
+\usepackage[T1]{fontenc}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -25,9 +29,9 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Adjust margins for readability
 \addtolength{\oddsidemargin}{-0.15in}
- \addtolength{\textwidth}{0.3in}
+\addtolength{\textwidth}{0.3in}
 
 \urlstyle{same}
 
@@ -35,13 +39,14 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Standard section formatting for ATS readability
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-4pt}\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Additional ATS optimization settings
 \pdfgentounicode=1
+\pdfobjcompresslevel=0 % Ensures text is not compressed in a way that hinders extraction
 
 %-------------------------
 % Custom commands
@@ -81,8 +86,9 @@
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+% Standard bullet points for better ATS parsing
+\renewcommand\labelitemi{\textbullet}
+\renewcommand\labelitemii{\textbullet}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
@@ -90,114 +96,129 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    {\Large \scshape Michael Scott} \\[2mm]
-    \footnotesize \raisebox{-0.1\height}
-    \faPhone\ \underline{(123) 456-7890} ~ 
-    {\faEnvelope\  \underline{mscott@example.com}} ~ 
-    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/michael-scott/}{linkedin.com/in/michael-scott}}  ~
-    {\faGithub\ \underline{\href{https://github.com/m-scott}{github.com/m-scott}} ~
-    {\faBriefcase\ \underline{\href{https://mscott-portfolio.vercel.app/}{mscott-portfolio.vercel.app/}}
+    {\Large Elmahdi Harchi} \\[2mm]
+    \footnotesize
+    Phone: +1 343-254-6991 ~ 
+    Email: mehdi.hr111@gmail.com ~ 
+    Location: Montréal, QC (Open to relocate to Barrie, ON) ~ Availability: Immediate
     \vspace{-8pt}
 \end{center}
 
- %-----------EDUCATION-----------
-\section{Education} \\[1mm]
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\vspace{1pt}
+Customer Service and Counter Sales Associate — energetic, organized, and bilingual (FR/EN). 1+ year of front-line customer service in fast-paced environments (front counter and hospitality) plus strong computer skills (Microsoft Office, accurate data entry, professional phone/email). Experience with order intake, POS/cash handling, inventory support, and clear communication with walk-in customers. Recently graduated with a DEC in Computer Programming (Collège La Cité, 2025). Ready for immediate start and open to relocation to Barrie, ON.
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{Education}\vspace{1mm}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University}{Expected Graduation: May 2026}
-      {Bachelor of Computer Engineering | Minor Artificial Intelligence
-      }{Location}
+      {College La Cité}{2024 -- 2025}
+      {DEC in Computer Programming}{Ottawa, Canada}
+    \resumeSubheading
+      {Ibn Tofail University}{2021 -- 2023}
+      {DEUG in Computer Science}{Morocco}
   \resumeSubHeadingListEnd
-    \resumeItemListStart
-        \resumeItem {Golden Key Honours Scholar | \textbf{GPA: 3.78}}
-        \vspace{-7pt}
-        \resumeItem {Courses: Software Engineering Practice, Applied Machine Learning, Operating Systems, Computer Architecture, Model-Based Programming, Algorithms and Data Structures, Intro. to Software Engineering}
-    \resumeItemListEnd
     \vspace{-12pt}
-%-----------Experience---------------
-\section{Work Experience}
-    \resumeSubHeadingListStart
-                \resumeSubheading{Tech Company}{May 2024 -- Sep 2024}{Machine Learning Engineer Intern}{Location} 
-                \resumeItemListStart
-                    \resumeItem{Engineered \textbf{Large Language Models (LLMs)}, including \textbf{BERT} and \textbf{Attention Models}, to analyze software engineering requirements and generate accurate dependency lists, improving project planning efficiency by \textbf{37\%}}
-                    \resumeItem{Analyzed \textbf{1200+} software requirements monthly using \textbf{scikit-learn (classification models)}, \textbf{spaCy}, and \textbf{NLTK} in \textbf{Python}, saving the company \textbf{\$20,000 annually} by decreasing project lead times}
-                    \resumeItem{Integrated \textbf{TF-IDF vectorization} to detect similarities in software requirements, focusing on \textbf{preprocessing}, \textbf{model training}, \textbf{hyperparameter tuning} and \textbf{clustering} to optimize \textbf{NLP} analysis processes}
-                    \resumeItemListEnd
-            \resumeSubheading{Tech Company}{May 2023 -- Sep 2023}{Backend Engineer Intern}{Location} 
-                \resumeItemListStart
-                    \resumeItem{Designed \textbf{30+ AWS Lambda Functions}, strategically leveraging \textbf{Lambda layers} to increase processing speed by \textbf{35\%} and re-usability by \textbf{52\%}, resulting in cost savings of \textbf{\$1,000} per large scale deployment}
-                    \resumeItem{Implemented \textbf{15+} server less workflows using \textbf{AWS Step Functions}, seamlessly integrating \textbf{REST APIs} and rigorously tested with \textbf{Postman},  resulting in a \textbf{65\%} reduction in execution time and enhanced operational efficiency}
-                    \resumeItem{Crafted a \textbf{Spring Boot} application with a \textbf{Drools} logic engine, containerized it using \textbf{Docker}, and seamlessly deployed it on \textbf{AWS} using \textbf{EC2}, strategically allocating cloud resources to ensure enhanced scalability and reliability}
-                    \resumeItemListEnd
-            \resumeSubheading{Tech Company}{Jun 2022 -- Sep 2022}{Software Engineer Intern}{Location}
-                \resumeItemListStart
-                    \resumeItem{Programmed and deployed a \textbf{Python}-based data migration pipeline on \textbf{Azure}, achieving a \textbf{50\% reduction} in transfer time for \textbf{100+ terabytes} of critical business data}
-                    \resumeItem{Centralized a \textbf{SQL} database infrastructure on \textbf{Azure}, enhancing data accessibility and security for \textbf{50+ stakeholders}, resulting in a \textbf{30\% improvement} in query performance across the organization}
-                    \resumeItemListEnd
-    \resumeSubHeadingListEnd
-    \vspace{-12pt}
-
-%-----------PROJECTS-----------
-\section{Projects} 
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-    \resumeProjectHeading
-            {\textbf{{McGill Scheduler}} $|$ \emph{\href{https://mcgillscheduler.vercel.app/}{Website}{ $|$ }\href{https://github.com/Erik-Cupsa/McGill-Scheduler}{Source Code}}}{ReactJS $|$ Spring Boot $|$ PostgreSQL}
-            \\[5mm]
-          \resumeItemListStart
-            \resumeItem{Developed and deployed a full-stack web application that enhanced academic experiences of \textbf{1,000+ McGill students}}
-            \resumeItem{Utilized \textbf{PostgreSQL} for data storage, \textbf{Spring Boot} for a \textbf{RESTful API} backend, and \textbf{ReactJS} for the user interface}
-          \resumeItemListEnd
- \vspace{-20pt}
- \resumeProjectHeading
-            {\textbf{{Empor}} $|$ \emph{\href{https://empor.ca/}{Website}}}{NextJS $|$ TypeScript $|$ Spring Boot}
-            \\[5mm]
-          \resumeItemListStart
-            \resumeItem{\textbf{Led the development} of a full-stack marketplace application for \textbf{1,000+ university students}, utilizing \textbf{NextJS} and \textbf{TypeScript} for the frontend, \textbf{Prisma} as the ORM, \textbf{Supabase} for the database, and a \textbf{Spring Boot} backend}
-          \resumeItemListEnd
- \vspace{-17pt}
- \resumeProjectHeading
-{\textbf{{Premier League Match Predictor}} $|$ \emph{\href{https://premierzone.vercel.app/}{Website}{ $|$ }\href{https://github.com/Erik-Cupsa/PLWebsite}{Source Code}}}{Pandas $|$ Scikit-Learn $|$ Python}
-\\[5mm]
-\resumeItemListStart
-\resumeItem{Created a model to predict matches, integrating \textbf{data scraping} with \textbf{pandas} and \textbf{machine learning} with \textbf{scikit-learn}}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-\vspace{-28pt}
-%-----------LEADERSHIP-----------
-\section{Leadership} 
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-                   \resumeProjectHeading
-            {\textbf{{SWErikCodes}} $|$\emph{{\href{https://www.tiktok.com/@swerikcodes?lang=en}{ TikTok $|$}\href{https://www.youtube.com/channel/UCgKFOz_KrMbmypWrawtzDQg}{ YouTube $|$}\href{https://www.instagram.com/swerikcodes/}{ Instagram}}}}{Jun 2023 -- Present}
-            \\[5mm]
-          \resumeItemListStart
-            \resumeItem{Created educational coding content for \textbf{75,000+} developers, with \textbf{4,200,000+} impressions per month}
-            \resumeItem{Produced coding tutorials on advanced topics such as \textbf{data structures}, \textbf{algorithms}, and \textbf{software design principles}}
-          \resumeItemListEnd
-          \resumeSubHeadingListEnd
- \vspace{-12pt}
-  %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
+%-----------SKILLS-----------
+\section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{   
-     \textbf{Languages}{: Python, Java, SQL, HTML5, CSS, JavaScript, Go, C, VHDL} \\[1mm]
-     \textbf{Developer Tools}{: AWS, Postman, PowerBI, Git, Azure, Docker, Jira} \\[1mm]
-     \textbf{Libraries/Frameworks}{: Spring Boot, ReactJS, PostgreSQL, NextJS, VueJS, NodeJS} \\ [1mm]
+    \textbf{Customer Service \& Sales Support}{: Greeting customers (in person/phone/email), needs assessment, issue resolution, friendly communication} \\[0.5mm]
+    \textbf{Order Processing \& Data Entry}{: Order intake, accurate computer input, attention to detail, documentation and follow-up} \\[0.5mm]
+    \textbf{Counter Operations \& POS}{: Front counter support, POS usage, cash/card handling, receipt reconciliation} \\[0.5mm]
+    \textbf{Warehouse \& Inventory Support}{: Stocking/replenishment assistance, picking/packing support, cycle counts; familiar with RF scanners and quick to learn scanning workflows} \\[0.5mm]
+    \textbf{Tools \& Systems}{: Microsoft Office (Outlook, Excel, Word), professional email/phone etiquette, basic CRM/ticketing} \\[0.5mm]
+    \textbf{Teamwork \& Pace}{: Fast-paced environments, multitasking, reliability, safety- and quality-focused} \\[0.5mm]
+    \textbf{Languages}{: French and English (bilingual)} \\[0.5mm]
     }}
  \end{itemize}
  \vspace{-16pt}
- \vspace{3pt}
-\vspace{10pt}
 
-\vspace{-15pt}
+%-----------EXPERIENCE---------------
+\section{Experience}
+    \resumeSubHeadingListStart
+            \resumeSubheading{Customer Service Associate / Server}{2024 -- 2025}{Jasmin Restaurant}{Ottawa, Canada}
+                \resumeItemListStart
+                    \resumeItem{Greeted and served high volumes of customers in a fast-paced environment; resolved inquiries and ensured satisfaction with a positive, solutions-focused attitude}
+                    \resumeItem{Processed orders accurately using POS; handled cash and card payments; balanced receipts at end of shift}
+                    \resumeItem{Coordinated with team members to meet service standards and expected order times; maintained a clean and safe workspace}
+                    \resumeItem{Managed phone inquiries and takeout orders; communicated clearly and professionally}
+                \resumeItemListEnd
 
+            \resumeSubheading{IT Assistant (Part-time)}{2024 -- 2025}{College La Cité}{Ottawa, Canada} 
+                \resumeItemListStart
+                    \resumeItem{Front-desk customer service for students and staff (in person, by phone and email); documented requests and followed up to closure}
+                    \resumeItem{Performed accurate data entry and maintained records within a ticketing system; produced clear, concise notes}
+                    \resumeItem{Supported inventory updates and tracking of equipment loans/returns; organized storage areas and assets}
+                    \resumeItem{Provided basic computer support and step-by-step guidance; escalated complex issues appropriately and on time}
+                    \resumeItem{Collaborated within a team environment while meeting deadlines and priorities in a busy campus setting}
+                \resumeItemListEnd
 
+            \resumeSubheading{Technical Support}{2022 -- 2023}{Freelance / Volunteer}{Morocco}
+                \resumeItemListStart
+                    \resumeItem{Assisted home and small-office users via phone and on-site visits; scheduled appointments and communicated updates}
+                    \resumeItem{Installed/configured common applications and performed basic hardware troubleshooting; documented repeatable steps}
+                    \resumeItem{Set up email clients (Outlook) and assisted with account recovery and basic training for end users}
+                \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
+
+%-----------ADDITIONAL-----------
+\section{Additional}
+    \begin{itemize}
+      \item Availability: Immediate. Comfortable with day shift 7:00 a.m.–4:30 p.m. Monday–Friday; able to rotate Saturdays (7:00–12:00) during summer.
+      \item Location: Based in Montréal, QC. Open to relocation to Barrie, ON for this opportunity.
+    \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+            {\textbf{Help Desk Knowledge Base System}}{HTML, CSS, JavaScript, MySQL}
+            \\[2mm]
+          \resumeItemListStart
+            \resumeItem{Developed an internal knowledge base web application to document common technical issues and solutions}
+            \resumeItem{Created searchable database of troubleshooting guides and implemented user authentication system}
+          \resumeItemListEnd
+    \resumeProjectHeading
+            {\textbf{PC Repair Workshop}}{Hardware Diagnostics, System Maintenance}
+            \\[2mm]
+          \resumeItemListStart
+            \resumeItem{Participated in computer hardware repair workshop, diagnosing and fixing common hardware failures}
+            \resumeItem{Performed system maintenance including component replacement, OS installation, and data recovery}
+          \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-28pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+            {\textbf{{Career Essentials in Data Analysis}}}{Microsoft and LinkedIn}
+            \\[1mm]
+          \resumeProjectHeading
+            {\textbf{{Career Essentials in Software Development}}}{Microsoft and LinkedIn}
+            \\[1mm]
+          \resumeProjectHeading
+            {\textbf{{Microsoft Azure AI Essentials Professional Certificate}}}{Microsoft}
+            \\[1mm]
+          \resumeProjectHeading
+            {\textbf{{Docker Foundations Professional Certificate}}}{Docker}
+            \\[1mm]
+          \resumeProjectHeading
+            {\textbf{{Career Essentials in Generative AI, What is Generative AI}}}{LinkedIn}
+            \\[1mm]
+          \resumeSubHeadingListEnd
+ \vspace{-15pt}
 
 \end{document}

@@ -1,0 +1,179 @@
+\documentclass[letterpaper,11pt]{article}
+
+% ATS-friendly packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[utf8]{inputenc} % Ensure proper character encoding
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=0.8cm]{geometry}
+
+% Ensure PDF is machine-readable
+\pdfgentounicode=1
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for readability
+\addtolength{\oddsidemargin}{-0.15in}
+\addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Standard section formatting for ATS readability
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Additional ATS optimization settings
+\pdfgentounicode=1
+\pdfobjcompresslevel=0 % Ensures text is not compressed in a way that hinders extraction
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% Standard bullet points for better ATS parsing
+\renewcommand\labelitemi{\textbullet}
+\renewcommand\labelitemii{\textbullet}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large Elmahdi Harchi} \\[2mm]
+    \footnotesize
+    Phone: +1 343-254-6991 ~ 
+    Email: mehdi.hr111@gmail.com ~ 
+    Location: Montréal, QC — Willing to relocate to Sidney, BC ~ Availability: Immediate
+    \\[1mm]
+    Shift flexibility: Able to train Mon–Thu 6:00–16:30; available Fri–Sun 6:00–19:30 after training
+    \vspace{-8pt}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\vspace{1pt}
+Safety-minded, detail-oriented candidate for Aircraft Plater in aerospace manufacturing. Bilingual (FR/EN), reliable, and comfortable in fast-paced, procedure-driven environments requiring PPE, cleanliness, and precise documentation. Strong work ethic, adaptability, and teamwork; comfortable handling repetitive tasks and standing for extended shifts. Recently graduated with a DEC in Computer Programming (Coll\'ege La Cit\'e, 2025). Willing to complete the Kushner Electro-Plating Know-How course within 4--6 months.
+\vspace{-12pt}
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Plating \& Surface Treatment (Training-Focused)}{: Anodizing, passivation, chemical conversion coatings; plating for carbon steels, stainless steels, aluminum alloys (motivated to learn; familiar with SOPs/specifications through training)} \\[0.5mm]
+    \textbf{Safety \& Compliance}{: PPE usage, safe chemical handling (with training), reading SDS, following work instructions; quality mindset aligned to DOT/customer standards} \\[0.5mm]
+    \textbf{Quality \& Documentation}{: Attention to detail; accurate record-keeping, checklist usage, traceability; basic instrument/equipment checks as directed} \\[0.5mm]
+    \textbf{Production Environment}{: Meet production deadlines, maintain clean and organized workspace, support 12-hour weekend shifts; collaborate and communicate clearly} \\[0.5mm]
+    \textbf{Languages}{: French and English (bilingual)} \\[0.5mm]
+  }}
+\end{itemize}
+\vspace{-16pt}
+
+%-----------EXPERIENCE---------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Customer Service Associate / Server}{2024 -- 2025}{Jasmin Restaurant}{Ottawa, Canada}
+      \resumeItemListStart
+        \resumeItem{Worked efficiently in a high-volume, fast-paced setting while meeting time-sensitive service targets and quality standards}
+        \resumeItem{Maintained a clean, safe, and organized workspace; followed hygiene/safety procedures and shift checklists}
+        \resumeItem{Supported weekend/evening shifts; collaborated with teammates to balance workload and ensure on-time order fulfillment}
+        \resumeItem{Handled POS transactions with accuracy and documented orders and adjustments clearly}
+      \resumeItemListEnd
+
+    \resumeSubheading{IT Assistant (Part-time)}{2024 -- 2025}{College La Cit\'e}{Ottawa, Canada}
+      \resumeItemListStart
+        \resumeItem{Documented requests and maintained precise records within a ticketing system; ensured traceability from intake to closure}
+        \resumeItem{Organized storage areas and assets; supported inventory updates and equipment loans/returns according to procedures}
+        \resumeItem{Followed step-by-step work instructions; escalated exceptions appropriately and on time; collaborated in a team setting}
+      \resumeItemListEnd
+
+    \resumeSubheading{Technical Support}{2022 -- 2023}{Freelance / Volunteer}{Morocco}
+      \resumeItemListStart
+        \resumeItem{Communicated clearly with users, scheduled onsite visits, and followed defined troubleshooting flows}
+        \resumeItem{Documented repeatable steps and produced concise notes to enable consistency and quality for future tasks}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{Education}\vspace{1mm}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {College La Cit\'e}{2024 -- 2025}
+      {DEC in Computer Programming (Recently graduated)}{Ottawa, Canada}
+    \resumeSubheading
+      {Ibn Tofail University}{2021 -- 2023}
+      {DEUG in Computer Science}{Morocco}
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+
+%-----------ADDITIONAL-----------
+\section{Additional}
+  \begin{itemize}
+    \item Willing to complete the Kushner Electro-Plating Know-How course within 4--6 months; open to additional internal training
+    \item Able to work the regular Fri--Sun 6:00 a.m.--7:30 p.m. shift after training; available for evening shifts with differential
+    \item Willing to relocate to Sidney, BC; currently based in Montr\'eal, QC
+  \end{itemize}
+
+\vspace{-8pt}
+\end{document}
