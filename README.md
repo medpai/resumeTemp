@@ -1,41 +1,44 @@
-# Software Engineer Resume Template
+# Resume & Cover Letter Templates (LaTeX)
 
-This repository contains a LaTeX template for a professional software engineer resume that I have personally used to secure numerous interviews. This template is designed to highlight technical skills, project experience, and achievements in a clean and organized format.
+This repository contains LaTeX templates for ATS‑friendly resumes and cover letters. It includes English and French variants and tailored versions for specific roles.
 
-## Overview
+## Repository
 
-### Features
+Clone your fork:
 
-- Clean and modern design.
-- Easy to customize and tailor for different job applications.
-- Sections for technical skills, work experience, projects, and education.
-- Structured layout to emphasize key information.
+```bash
+git clone https://github.com/medpai/resumeTemp.git
+cd resumeTemp
+```
 
-## How to Use
+## Files
 
-1. **Prerequisites:** Install LaTeX distribution (e.g., TeX Live, MiKTeX), or create an Overleaf account.
+- `main.tex` — English resume (customer service / counter support focused)
+- `main_fr.tex` — French resume (technicien informatique / centre de services)
+- `resume_aircraft_plater.tex` — Targeted resume for Aircraft Plater role
+- `cover_letter_wheatland.tex` — Cover letter for Wheatland Regional Library (Computer Technician)
+- PDFs are generated alongside `.tex` files upon compilation
 
-2. **Clone the Repository:**
+## Build
 
-    ```bash
-    git clone https://github.com/yourusername/software-engineer-resume.git
-    cd software-engineer-resume
-    ```
+Prerequisite: LaTeX distribution (MiKTeX/TeX Live) or Overleaf.
 
-    - You can also simply copy paste this into Overleaf!
+Compile locally (example):
 
-3. **Edit the Resume:**
+```bash
+pdflatex main.tex
+pdflatex main_fr.tex
+pdflatex resume_aircraft_plater.tex
+pdflatex cover_letter_wheatland.tex
+```
 
-    - Open `main.tex` in your preferred LaTeX editor.
-    - Customize the content under each section (skills, experience, projects, education) according to your own details.
-    - Modify the styling, fonts, or colors as needed.
+## ATS notes
 
-4. **Compile the Resume:**
+- Use standard sections (Experience, Education, Skills)
+- Keep formatting simple (standard bullets, fonts)
+- Include role‑specific keywords from job descriptions
+- Avoid heavy tables/graphics and headers/footers
 
-    - Compile the LaTeX file (`main.tex`) using your LaTeX distribution.
-    - This will generate the PDF output (`resume.pdf`) with your updated resume.
+## License
 
-5. **Preview and Print:**
-
-    - Review the `resume.pdf` to ensure everything appears as expected.
-    - Print or save the PDF to share with potential employers.
+Personal use permitted.
